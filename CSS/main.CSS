@@ -1,0 +1,110 @@
+
+:root {
+   --main-color:#FF9800 ; 
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    }
+    /*Start stting box*/
+.sttiong-box {
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.808);
+   left: -200px;
+   top: 0;
+   transition: 0.3s;
+}
+.sttiong-box.open {
+    left: 0;
+}
+.sttiong-box .togolstting {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    background-color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
+    /*end stting box*/
+
+/*start landing*/
+.landing-page {
+    min-height: 115vh;
+    background-image: url("../imges/01.jpg");
+    background-size: cover;
+    position: relative;
+}
+.landing-page .Overlay {
+    background-color:rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.landing-page .heder-area {
+ position: relative;
+ z-index: 2;
+ color: white;
+ display: flex;
+ padding: 10px;
+}
+.landing-page .logo {
+    width: 300px;
+    padding: 15px;
+   font-weight: bold;
+   font-size: 25px;
+}
+.heder-area .links {
+    list-style: none;
+    padding: 0 ;
+    width: 100%;
+    text-align: center;
+}
+.heder-area .links li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+  
+}
+.heder-area .links li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.heder-area .links li a.acteve,
+.heder-area .links li a:hover{
+  color: var(--main-color);
+}
+.landing-page .text {
+ position: absolute;
+ text-align: center; 
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%); 
+ z-index: 3; 
+ width: 450px;
+
+}
+.landing-page .text h1{
+color: white;
+}
+.landing-page .text h1 span{
+    color:var(--main-color);
+}
+.landing-page .text p{
+color: white;
+line-height: 1.6;
+font-size: 17px;
+}
+
+/*End  landing*/
